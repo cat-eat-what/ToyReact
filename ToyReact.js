@@ -1,6 +1,5 @@
-class ElementWrapper extends wrapper {
+class ElementWrapper {
 	constructor(type) {
-		super(type);
 		this.root = document.createElement(type);
 	}
 	setAttribute(name, value) {
@@ -14,9 +13,8 @@ class ElementWrapper extends wrapper {
 	}
 }
 
-class TextWrapper extends wrapper {
+class TextWrapper {
 	constructor(content) {
-		super(content);
 		this.root = document.createTextNode(content);
 	}
 	mountTo(parent) {
